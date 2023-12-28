@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Travel One </title>
+    </head>
+
+    <body>
+        
+        <!--Encabezado/Barra de Navegación/Menues-->
+        <header>
+            <img src="./assets/LG_transparente.png" alt="" class="logo">
+            <ul class="header_menu-container">
+                <li class="header_menu-op"><a class="header_menu-op" href="#inicio">Inicio</a></li>
+                <li class="header_menu-op"><a class="header_menu-op" href="#quienes_somos">Sobre nosotros</a></li>
+                <li class="header_menu-op"><a class="header_menu-op" href="#destinos_d">Destinos Destacados</a></li>
+                <li class="header_menu-op"><a class="header_menu-op" href="#paquetes">Paquetes</a></li>
+            </ul>
+
+            <button onclick="mostrar_formulario()">Contáctanos</button>
+
+        </header>
+
+
+        <!--Section Portada Principal-->
+        <section id="inicio" class="portada_principal">
+
+            <div class="portada_text-wrapper">
+                <h1 class="portada_titulo">Explora el mundo a tu manera</h1>
+                <h2 class="portada_subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            </div>
+
+            <div class="portada_inferior_wrapper">
+
+                <div class="portada_info">
+                    <h4 class="portada_inferior_titulo">Descubre la magia de Machu Picchu</h4>
+                    <p class="portada_inferior_descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <span class="linea_divisoria"></span>
+
+                <div class="portada_info">
+                    <h4 class="portada_inferior_titulo">Aventura en la Patagonia</h4>
+                    <p class="portada_inferior_descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <span class="linea_divisoria"></span>
+
+                <div class="portada_info">
+                    <h4 class="portada_inferior_titulo">Sabor y cultura de Marruecos</h4>
+                    <p class="portada_inferior_descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <!-- Sección de Lugares Destacados -->
+        <div class="tit_destino">
+            <h2 id="destinos_d">Destinos destacados</h2>
+        </div>
+        
+        <section  class="lugares_destacados">
+
+            <div class="card destinos">
+                <figure><img src="./assets/destino-1.jpg" alt="Nombre del Lugar 1"></figure>
+                <p class="nombre_destino">Destino</p>
+            </div>
+
+            <div class="card destinos">
+                <img src="./assets/destino-2.jpeg" alt="Nombre del Lugar 2">
+                <p class="nombre_destino">Destino</p>
+            </div>
+
+            <div class="card destinos">
+                <img src="./assets/destino-3.jpeg" alt="Nombre del Lugar 3">
+                <p class="nombre_destino">Destino</p>
+            </div>
+
+            <div class="card destinos">
+                <img src="./assets/destino-4.jpeg" alt="Nombre del Lugar 4">
+                <p class="nombre_destino">Destino</p>
+            </div>
+
+            <div class="card destinos">
+                <img src="./assets/destino-5.jpeg" alt="Nombre del Lugar 5">
+                <p class="nombre_destino">Destino</p>
+            </div>
+
+            <div class="card destinos">
+                <img src="./assets/destino-6.jpg" alt="Nombre del Lugar 6">
+                <p class="nombre_destino">Destino</p>
+            </div>
+
+        </section>
+
+        <!-- Sección de Ofertas Nacionales -->
+        <section class="contenedor_ofertas">
+
+            <div id="paquetes" class="contenedor_header">
+
+                <div class="ofertas_contenido">
+                    <h2>30% Off Paquetes nacionales</h2>
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ut at aut maxime voluptatem eaque odio
+                        labore.</p>
+                    <p>Eaque numquam iusto consectetur neque minus explicabo, eius error? Sunt, explicabo!. </p>
+
+                    <button class="b_paquetes">Ver paquetes...</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Sección Sobre Nosotros -->
+        <section class="conocenos">
+
+            <div id="quienes_somos" class="conocenos_header">
+                <div>
+                    <img src="./assets/sobrenosotros.png" alt="nosotros imagen representativa">
+                </div>
+                <div class="q_somos">
+                
+                    <h2>Sobre nosotros</h2>
+                    <h3>Somos una agencia de viajes a la medida de tus sueños</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ut at aut maxime voluptatem eaque odio
+                        labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ut at aut maxime voluptatem eaque odio
+                        labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ut at aut maxime voluptatem eaque odio
+                        labore.</p>
+                        
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ut at aut maxime voluptatem eaque odio
+                        labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ut at aut maxime voluptatem eaque odio
+                        labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ut at aut maxime voluptatem eaque odio
+                        labore.</p>
+
+            </div>
+
+        </section>
+
+        <!-- Formulario de contacto -->
+        <div id="formulario_cei">
+            
+            <div id="contentedor_formulario" class="contentedor_formulario">
+            
+                <span class="cerrar" onclick="cerrar_formulario()">&times;</span>
+
+                <div id="step1">
+                    <label for="nombre_apellido">Nombre y Apellido:</label>
+                    <input type="text" id="nombre_apellido" placeholder="Ingrese su nombre y apellido">
+                    <button onclick="nextStep()">Siguiente</button>
+                </div>
+                
+                <div id="step2" style="display: none;">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+                    <button onclick="nextStep()">Siguiente</button>
+                    <button onclick="prevStep()">Atrás</button>
+                </div>
+
+                <div id="step3" style="display: none;">
+                    <label for="mensaje">Mensaje (máximo 2000 caracteres):</label>
+                    <textarea id="mensaje" placeholder="Ingrese su mensaje"></textarea>
+                    <button onclick="submitForm()">Enviar</button>
+                    <button onclick="prevStep()">Atrás</button>
+                </div>
+            
+            </div>
+        </div>
+      
+        <!-- Informe -->
+        <div class="informe" id="informe">
+            <div class="informe_contenido">    
+             
+                <h2>Informe</h2>
+                <br>
+                <p id="i_nombre_apellido"></p>
+                <p id="i_Email"></p>
+                <p id="i_Mensaje"></p>
+                <br>
+                <button onclick="cerrar_informe()">Finalizar</button>
+
+            </div>
+        </div>
+            
+        <!-- Pié de Página -->
+        <footer class="contenedor_footer">
+  
+            <div class="pie_de_pagina_izquierdo">
+                <h3>Travel<span>One</span></h3>
+                <p class="pdp_nombre">Travel One © 2023</p>
+                <p class="pdp_nombre">Página creada por Luciano Buscaglia y Jorge Rey.</p>
+                <p class="pdp_nombre">UTN. Curso: Habilidades Digitales - Introducción a la Programación.</p>
+                <p class="pdp_nombre">Profesor: Alejandro Campos.</p>
+            </div>
+      
+            <div class="pie_de_pagina_centro">
+      
+              <div>
+                <i class="las la-map-marker"></i>
+                <p><span>Av. San Martin 435</span> Wheelwright, Santa Fe. Argentina.</p>
+              </div>
+      
+              <div>
+                <i class="las la-phone"></i>
+                <p>+549 - 2473 - 998877</p>
+              </div>
+      
+              <div>
+                <i class="las la-envelope"></i>
+                <p>info@travelone.com</p>
+              </div>
+      
+            </div>
+      
+            <div class="pie_de_pagina_derecha">
+      
+              <p class="pdp_redes_sociales">
+                <span>Redes Sociales</span>
+                
+               </p>
+      
+              <div class="redes_sociales">
+      
+                <span><i class="lab la-facebook-f"></i></span>
+                <span><i class="lab la-instagram"></i></span>
+                <span><i class="lab la-twitter"></i></span>
+                <span><i class="lab la-whatsapp"></i></span>
+      
+              </div>
+      
+            </div>
+      
+          </footer>
+
+     <!-- Enlace a archivo Javascript -->
+        <script src="./main.js"></script>
+
+    </body>
+
+</html>
